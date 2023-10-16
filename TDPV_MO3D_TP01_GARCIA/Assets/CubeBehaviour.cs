@@ -5,7 +5,7 @@ using UnityEngine;
 public class CubeBehaviour : MonoBehaviour
 {
 
-    Vector3 rotacion;
+    Vector3 rotation;
 
 
     [SerializeField]
@@ -23,7 +23,7 @@ public class CubeBehaviour : MonoBehaviour
     {
 
         rotacion = new Vector3(InputHorizontal, InputVertical, 0) * RotationSpeed * Time.deltaTime;
-        transform.Rotate(rotacion);
+        transform.Rotate(rotation);
     }
 
     void FixedUpdate()
