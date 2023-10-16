@@ -22,7 +22,7 @@ public class CubeBehaviour : MonoBehaviour
     private void RotateObject()
     {
 
-        rotacion = new Vector3(InputHorizontal, InputVertical, 0) * RotationSpeed * Time.deltaTime;
+        rotation = new Vector3(InputHorizontal, InputVertical, 0) * RotationSpeed * Time.deltaTime;
         transform.Rotate(rotation);
     }
 
